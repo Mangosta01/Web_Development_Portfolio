@@ -45,6 +45,21 @@ body {
 }
 
 
+.hero-banner {
+  height: 200px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+}
+
+
+.hero-banner h2 {
+  background-color: rgb(102, 196, 196);
+  display: inline-block;
+  margin-top: 130px;
+  margin-left: 650px;
+  border-radius: 5px;
+  padding: 5px;
+}
 
 
 h2,
