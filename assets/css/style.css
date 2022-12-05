@@ -62,6 +62,47 @@ body {
 }
 
 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 25% 75% 25%;
+  grid-template-areas: " page-section about"
+    "page-section work"
+    "page-section contact"
+    ;
+}
+
+.page-section {
+  grid-area: page-section;
+}
+
+
+#about {
+  grid-area: about; 
+}
+
+#work {
+  grid-area: work;
+  display: grid;
+  grid-template-columns: 50% 50%;
+   grid-template-rows: 50% 25% 25%;
+  grid-template-areas:
+    "project1 project1"
+    "project2 project3"
+    "project4 project5"
+    ;
+}
+
+#contact {
+  grid-area: contact
+}
+
+
+#work {
+  grid-area:work
+}
+
+
 h2,
 h3,
 h4,
