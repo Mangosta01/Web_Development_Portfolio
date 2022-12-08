@@ -99,6 +99,69 @@ body {
 }
 
 
+.Portfolio {
+  grid-area: Portfolio;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  margin-top: 20px;
+}
+
+#work{
+  border-right: 10px solid darkblue;
+}
+
+.What {
+  grid-area: What;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-areas: " Project1 Project1"
+    "Project2 Project3"
+    "Project4 Project5";
+
+}
+
+
+
+.Project1 {
+  grid-area: Project1;
+  display: grid;
+  justify-content: center;
+}
+
+.Project2 {
+  grid-area: Project2;
+  display: grid;
+  justify-content: center;
+}
+
+.Project3 {
+  grid-area: Project3;
+  display: grid;
+  justify-content: center;
+}
+
+.Project4 {
+  grid-area: Project4;
+  display: grid;
+  justify-content: center;
+}
+
+
+.Project5 {
+  grid-area: Project5;
+  display: grid;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
 
 
 
