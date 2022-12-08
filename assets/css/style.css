@@ -55,7 +55,7 @@ body {
 .hero-banner h2 {
   background-color: rgb(102, 196, 196);
   display: inline-block;
-  margin-top: 130px;
+  margin-top: 100px;
   margin-left: 650px;
   border-radius: 5px;
   padding: 5px;
@@ -65,52 +65,56 @@ body {
 .page-wrapper {
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: 25% 75% 25%;
-  grid-template-areas: " page-section about"
-    "page-section work"
-    "page-section contact"
-    ;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: " Aboutus Who"
+    "Portfolio What"
+    "Contactus Where"
+  ;
+  column-gap: 50px;
+  row-gap: 100px;
+
 }
 
-.page-section {
-  grid-area: page-section;
-}
+.Aboutus {
+  grid-area: Aboutus;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  margin-top: 20px;
 
+}
 
 #about {
-  grid-area: about; 
+  border-right: 10px solid darkblue;
+
+
 }
 
-#work {
-  grid-area: work;
+.Who {
+  grid-area: Who;
   display: grid;
-  grid-template-columns: 50% 50%;
-   grid-template-rows: 50% 25% 25%;
-  grid-template-areas:
-    "project1 project1"
-    "project2 project3"
-    "project4 project5"
-    ;
-}
+  align-items: center;
+  justify-content: center;
 
-#contact {
-  grid-area: contact
 }
 
 
-#work {
-  grid-area:work
+
+
+
+h3 {
+  font-size: 50px;
+  color: darkblue;
 }
 
 
-h2,
-h3,
 h4,
 h5,
 h6 {
   margin: 0;
 }
 
-p {
+p,li {
   margin: 0;
+  font-weight: bold; color: darkblue;
 }
