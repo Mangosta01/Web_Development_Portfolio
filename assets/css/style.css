@@ -156,13 +156,27 @@ body {
 }
 
 
+.Contactus {
+  grid-area: Contactus;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 30px;
+}
 
+#contact{
+  border-right: 10px solid darkblue;
+}
 
+ul {
+  list-style-type: none;
+}
 
-
-
-
-
+.Where {
+  grid-area: Where;
+  display: flex;
+  justify-content: space-evenly;
+  }
 
 
 h3 {
