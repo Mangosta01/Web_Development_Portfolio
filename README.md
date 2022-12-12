@@ -1,7 +1,4 @@
 # Web_Development_Portfolio
-# Code Refactor Project : Web Accessibility
-
-
 
 
 ## Description
