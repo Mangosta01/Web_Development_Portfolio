@@ -10,7 +10,14 @@ body {
   line-height: 1.5;
 }
 
-
+@media screen and (max-width: 800px){
+  .column{
+    width: 100%;
+    .row{
+      width:100%
+    }
+  }
+  }
 
 .header {
   padding-top: 10px;
