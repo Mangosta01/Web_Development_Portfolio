@@ -26,7 +26,7 @@ Internet browser and broaddband connection
 
 ## Usage
 
-https://mangosta01.github.io/Web_Development_Portfolio_/
+https://mangosta01.github.io/Web_Development_Portfolio/
 
 
 
