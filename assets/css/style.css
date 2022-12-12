@@ -1,13 +1,16 @@
 * {
   box-sizing: border-box;
+
+
 }
 
 body {
-  margin: 0;
-  padding: 0;
+
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+
+
 
 .header {
   padding-top: 10px;
@@ -23,9 +26,10 @@ body {
 
 .header h1 {
   background-color: rgb(102, 196, 196);
-  padding-left: 50px;
+  padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
+  margin-left: 10px;
 }
 
 .header ul {
@@ -65,13 +69,14 @@ body {
 .page-wrapper {
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 10% 10% 55% 10%;
   grid-template-areas: " Aboutus Who"
+  "Skillset How"
     "Portfolio What"
     "Contactus Where"
   ;
-  column-gap: 50px;
-  row-gap: 100px;
+  row-gap: 50px;
+
 
 }
 
@@ -79,13 +84,14 @@ body {
   grid-area: Aboutus;
   display: grid;
   justify-content: center;
-  align-items: end;
+  align-items: start;
   margin-top: 20px;
 
 }
 
 #about {
   border-right: 10px solid darkblue;
+
 
 
 }
@@ -95,19 +101,47 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
+  margin-left: 20px;
 
 }
+
+.Skillset {
+  grid-area: Skillset;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  margin-top: 20px;
+
+}
+
+#skill {
+  border-right: 10px solid darkblue;
+
+
+
+}
+
+.How {
+  grid-area: How;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+
+}
+
+
 
 
 .Portfolio {
   grid-area: Portfolio;
   display: grid;
   justify-content: center;
-  align-items: end;
+  align-items: start;
   margin-top: 20px;
 }
 
-#work{
+#work {
   border-right: 10px solid darkblue;
 }
 
@@ -115,56 +149,75 @@ body {
   grid-area: What;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 25% 25%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: " Project1 Project1"
+    "Project1 Project1"
     "Project2 Project3"
     "Project4 Project5";
 
+
 }
 
 
 
-.Project1 {
+#Project1 {
   grid-area: Project1;
-  display: grid;
-  justify-content: center;
+  background-image: url(../images/V2-LOGO-08_10_21-4.jpg);
+  
+  height: 400px;
 }
 
-.Project2 {
+#Project2 {
   grid-area: Project2;
-  display: grid;
-  justify-content: center;
+  background-image: url(../images/GSC-text-only-Logo_large.png);
+    
 }
 
-.Project3 {
+#Project3 {
   grid-area: Project3;
-  display: grid;
-  justify-content: center;
-}
+  background-image: url(../images/EOL_600x600_4db2fea1-b616-4b82-a0bd-889b15b1b8ad_360x.jpg);
+  }
 
-.Project4 {
+#Project4 {
   grid-area: Project4;
-  display: grid;
-  justify-content: center;
-}
+  background-image: url(../images/IMG_0002.JPG);
+ }
 
 
-.Project5 {
+#Project5 {
   grid-area: Project5;
+  background-image: url(../images/886c0b_2f4a03b3558845349cf83190be2cd312_mv2.jpg);
+  }
+
+
+.projectBox {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px;
+  height: 200px;
+  border: 3px solid rgb(102, 196, 196);
+  cursor: pointer;
   display: grid;
-  justify-content: center;
+  justify-items: start;
+  align-items: end;
 }
 
+.projectTitle {
+  background-color: rgb(102, 196, 196);
+  margin-bottom: 5px;
+  padding: 5px;
+  }
 
 .Contactus {
   grid-area: Contactus;
   display: grid;
-  justify-content: center;
-  align-items: start;
-  margin-bottom: 30px;
+  justify-content:center;
+  align-items:flex-start;
+  
 }
 
-#contact{
+#contact {
   border-right: 10px solid darkblue;
 }
 
@@ -176,7 +229,8 @@ ul {
   grid-area: Where;
   display: flex;
   justify-content: space-evenly;
-  }
+  align-items: center;
+}
 
 
 h3 {
@@ -185,13 +239,15 @@ h3 {
 }
 
 
-h4,
+
 h5,
 h6 {
   margin: 0;
 }
 
-p,li {
+p,
+li {
   margin: 0;
-  font-weight: bold; color: darkblue;
+  font-weight: bold;
+  color: darkblue;
 }
